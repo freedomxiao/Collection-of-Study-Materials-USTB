@@ -1,12 +1,12 @@
 # Collection-of-Study-Materials-USTB
  - 大二上
- 	-[离散数学A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6)
-  -概率论与数理统计A
-  -工科物理实验AI
-  -体育III
-  -工科物理BII
-  -数字电子技术实验
-  -模拟与数字电子技术
+ 	- [离散数学A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6)
+  - 概率论与数理统计A
+  - 工科物理实验AI
+  - 体育III
+  - 工科物理BII
+  - 数字电子技术实验
+  - 模拟与数字电子技术
   -[数字逻辑](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91)
   -[程序设计实践II](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%20II)
   -党史与国情概论
