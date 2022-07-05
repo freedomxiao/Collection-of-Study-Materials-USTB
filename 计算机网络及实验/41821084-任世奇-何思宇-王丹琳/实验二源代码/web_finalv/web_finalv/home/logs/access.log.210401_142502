@@ -1,0 +1,6 @@
+2021-04-01_14:25:02 [pK*Qü]  24627 server 140269283411712 start
+2021-04-01_14:25:02 [pK*Qü]  24627 Starting server succeed. The number of working threads is 1
+2021-04-01_14:25:08 [€oÏü’]  24627 uri invalid ,404,uri:ex.html( 2:)
+2021-04-01_14:25:08 [     ]  24627 fill_send_buff:read response file home/webhome/404.html error( 2:
+ı’)
+2021-04-01_14:25:08 [@pÏü’]  24627 resp_body_handle:fill_send_buff error home/webhome/404.html ( 2:)

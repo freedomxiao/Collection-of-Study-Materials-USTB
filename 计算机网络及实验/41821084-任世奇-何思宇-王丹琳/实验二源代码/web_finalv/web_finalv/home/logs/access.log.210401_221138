@@ -1,0 +1,9 @@
+2021-04-01_22:11:38 [ ,ÿ]  32292 server 140464155875072 start
+2021-04-01_22:11:38 [ ,ÿ]  32292 Starting server succeed. The number of working threads is 1
+2021-04-01_22:11:44 [p?\À]  32292 uri invalid ,404,uri:/4061594658432547wer( 2:)
+2021-04-01_22:11:44 [ð?\À]  32292 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:11:44 [0@\À]  32292 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_22:12:32 [p?\À]  32292 uri invalid ,404,uri:/test( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_22:12:32 [ð?\À]  32292 fill_send_buff:read response file home/webhome/404.html error( 14:¬ÔU”pU)
+2021-04-01_22:12:32 [0@\À]  32292 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_22:12:38 [     ]  32292 uri:/test.html,addr:255.127.0.0:535,start:2021-04-01_22:12:38,duration:321

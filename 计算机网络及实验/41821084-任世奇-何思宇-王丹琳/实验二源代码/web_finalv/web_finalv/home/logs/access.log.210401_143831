@@ -1,0 +1,5 @@
+2021-04-01_14:38:31 [@ìËÔü]  26823 server 139913333913344 start
+2021-04-01_14:38:31 [@ìËÔü]  26823 Starting server succeed. The number of working threads is 1
+2021-04-01_14:38:36 [€‘@]  26823 uri invalid ,404,uri:ex.html( 2:)
+2021-04-01_14:38:36 [     ]  26823 fill_send_buff:read response file home/webhome/404.html error( 2:¿Ë@)
+2021-04-01_14:38:36 [@ ‘@]  26823 resp_body_handle:fill_send_buff error home/webhome/404.html ( 2:)

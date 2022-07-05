@@ -1,0 +1,7 @@
+2021-04-01_18:56:12 [Pr}ÿ]  2718 server 140030554760960 start
+2021-04-01_18:56:12 [Pr}ÿ]  2718 Starting server succeed. The number of working threads is 1
+2021-04-01_18:56:13 [     ]  2718 uri:/index.html,addr:255.127.0.0:7037,start:2021-04-01_18:56:13,duration:374
+2021-04-01_18:56:18 [pOyg[]  2718 uri invalid ,404,uri:/404( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_18:56:18 [ğOyg[]  2718 fill_send_buff:read response file home/webhome/404.html error( 14:DCvDV)
+2021-04-01_18:56:18 [0Pyg[]  2718 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ğTyg[)
+2021-04-01_18:56:32 [ĞPyg[]  2718 timer:connection timeout

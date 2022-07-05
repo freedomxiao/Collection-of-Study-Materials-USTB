@@ -1,0 +1,6 @@
+2021-04-01_22:33:18 [à©äÀü]  3297 server 140695685019392 start
+2021-04-01_22:33:18 [à©äÀü]  3297 Starting server succeed. The number of working threads is 1
+2021-04-01_22:33:21 [pŸSDö]  3297 uri invalid ,404,uri:/6464987987987987( 2:)
+2021-04-01_22:33:21 [ğŸSDö]  3297 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:33:21 [0 SDö]  3297 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_22:33:51 [     ]  3297 uri:/index.html,addr:252.127.0.0:58560,start:2021-04-01_22:33:51,duration:767

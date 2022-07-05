@@ -1,0 +1,8 @@
+2021-04-04_19:35:59 [k¡ý]  1808 server 140669011007232 start
+2021-04-04_19:35:59 [k¡ý]  1808 Starting server succeed. The number of working threads is 1
+2021-04-04_19:36:21 [Ð€nð]  1808 timer:connection timeout
+2021-04-04_19:36:33 [pnð]  1808 uri invalid ,404,uri:/img/title1png( 2:)
+2021-04-04_19:36:33 [     ]  1808 uri:/img/title1png,addr:0.0.0.0:0,start:2021-04-04_19:36:33,duration:145
+2021-04-04_19:36:38 [pnð]  1808 uri invalid ,404,uri:/img/title1.png( 2:@çð)
+2021-04-04_19:36:38 [     ]  1808 uri:/img/title1.png,addr:0.0.0.0:0,start:2021-04-04_19:36:38,duration:693
+2021-04-04_19:36:46 [Ð€nð]  1808 timer:connection timeout

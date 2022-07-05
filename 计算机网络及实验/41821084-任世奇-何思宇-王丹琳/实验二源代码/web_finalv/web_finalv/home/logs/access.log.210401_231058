@@ -1,0 +1,6 @@
+2021-04-01_23:10:58 [¡#ü]  9239 server 140167843710720 start
+2021-04-01_23:10:58 [¡#ü]  9239 Starting server succeed. The number of working threads is 1
+2021-04-01_23:11:03 [poˆ^{]  9239 uri invalid ,404,uri:/8917387183718231.html( 2:)
+2021-04-01_23:11:03 [ğoˆ^{]  9239 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_23:11:03 [0pˆ^{]  9239 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_23:11:29 [     ]  9239 uri:/index.html,addr:252.127.0.0:8991,start:2021-04-01_23:11:29,duration:482

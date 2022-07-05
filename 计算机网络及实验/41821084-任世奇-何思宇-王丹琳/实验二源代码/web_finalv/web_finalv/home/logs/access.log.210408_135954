@@ -1,0 +1,6 @@
+2021-04-08_13:59:54 [     ]  14035 server 140699922720512 start
+2021-04-08_13:59:54 [     ]  14035 Starting server succeed. The number of working threads is 1
+2021-04-08_14:00:03 [     ]  14035 uri:/index.html,addr:0.0.0.0:0,start:2021-04-08_14:00:03,duration:183
+2021-04-08_14:35:54 [pÏé@÷]  14035 uri invalid ,404,uri:/4048238273( 2:@[bA÷)
+2021-04-08_14:35:54 [     ]  14035 uri:/4048238273,addr:0.0.0.0:0,start:2021-04-08_14:35:54,duration:249
+2021-04-08_14:36:07 [     ]  14035 uri:/img/title.png,addr:0.0.0.0:0,start:2021-04-08_14:36:07,duration:5195526

@@ -1,0 +1,8 @@
+2021-04-01_18:24:02 [ğ'_ı]  29917 server 140576264369920 start
+2021-04-01_18:24:02 [ğ'_ı]  29917 Starting server succeed. The number of working threads is 1
+2021-04-01_18:24:04 [pMvÚ]  29917 uri invalid ,404,uri:/SSSS.html( 2:)
+2021-04-01_18:24:04 [ğMvÚ]  29917 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_18:24:04 [0 MvÚ]  29917 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:)
+2021-04-01_18:24:14 [pMvÚ]  29917 uri invalid ,404,uri:/SSSS.html( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_18:24:14 [ğMvÚ]  29917 fill_send_buff:read response file home/webhome/404.html error( 14:´TV)
+2021-04-01_18:24:14 [0 MvÚ]  29917 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:)

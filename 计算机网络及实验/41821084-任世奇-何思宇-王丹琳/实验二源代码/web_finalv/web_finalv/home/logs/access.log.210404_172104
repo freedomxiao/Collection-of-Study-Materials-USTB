@@ -1,0 +1,5 @@
+2021-04-04_17:21:04 [ğïzü]  14206 server 140562755266304 start
+2021-04-04_17:21:04 [ğïzü]  14206 Starting server succeed. The number of working threads is 1
+2021-04-04_17:21:09 [     ]  14206 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_17:21:09,duration:352
+2021-04-04_17:21:09 [pQ×]  14206 uri invalid ,404,uri:/favicon.ico( 2:@‘Q×)
+2021-04-04_17:21:09 [     ]  14206 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-04_17:21:09,duration:333

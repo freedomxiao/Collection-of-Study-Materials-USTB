@@ -1,0 +1,13 @@
+2021-04-08_14:37:27 [€£
+ş]  20010 server 139978200844032 start
+2021-04-08_14:37:27 [€£
+ş]  20010 Starting server succeed. The number of working threads is 1
+2021-04-08_14:37:36 [pïï6O]  20010 uri invalid ,404,uri:/title1.html( 2:)
+2021-04-08_14:37:36 [     ]  20010 uri:/title1.html,addr:0.0.0.0:0,start:2021-04-08_14:37:36,duration:500
+2021-04-08_14:37:42 [pïï6O]  20010 uri invalid ,404,uri:/img/title1.html( 2:@{h7O)
+2021-04-08_14:37:42 [     ]  20010 uri:/img/title1.html,addr:0.0.0.0:0,start:2021-04-08_14:37:42,duration:199
+2021-04-08_14:37:47 [pïï6O]  20010 uri invalid ,404,uri:/img/title2.html( 2:@{h7O)
+2021-04-08_14:37:47 [     ]  20010 uri:/img/title2.html,addr:0.0.0.0:0,start:2021-04-08_14:37:47,duration:287
+2021-04-08_14:37:59 [pïï6O]  20010 uri invalid ,404,uri:/img( 2:@{h7O)
+2021-04-08_14:37:59 [     ]  20010 uri:/img,addr:0.0.0.0:0,start:2021-04-08_14:37:59,duration:1278
+2021-04-08_14:38:04 [     ]  20010 uri:/news.html,addr:0.0.0.0:0,start:2021-04-08_14:38:04,duration:143

@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" -i "../../../../../../../cpu/include" --include "../../../../mycpu.ip_user_files/ipstatic/hdl" --include "../../../../../../rtl/xilinx_ip/clk_pll" --include "../../../../../../../cpu/include" \
+"../../../../../../../cpu/core/stage/id/BranchGen.v" \
+"../../../../../../../cpu/core/Core.v" \
+"../../../../../../../cpu/core/stage/ex/EX.v" \
+"../../../../../../../cpu/core/stage/ex/EXMEM.v" \
+"../../../../../../../cpu/core/stage/id/FunctGen.v" \
+"../../../../../../../cpu/core/stage/id/ID.v" \
+"../../../../../../../cpu/core/stage/id/IDEX.v" \
+"../../../../../../../cpu/core/stage/if/IFID.v" \
+"../../../../../../../cpu/core/stage/mem/MEM.v" \
+"../../../../../../../cpu/core/stage/mem/MEMWB.v" \
+"../../../../../../../cpu/core/stage/id/MemGen.v" \
+"../../../../../../../cpu/core/stage/id/OperandGen.v" \
+"../../../../../../../cpu/core/stage/if/PC.v" \
+"../../../../../../../cpu/core/pipeline/PipelineController.v" \
+"../../../../../../../cpu/core/pipeline/PipelineDeliver.v" \
+"../../../../../../../cpu/sim/RAM.v" \
+"../../../../../../../cpu/sim/ROM.v" \
+"../../../../../../../cpu/core/storage/RegFile.v" \
+"../../../../../../../cpu/core/stage/id/RegGen.v" \
+"../../../../../../../cpu/core/storage/RegReadProxy.v" \
+"../../../../../../../cpu/core/stage/wb/WB.v" \
+"../../../../mycpu.srcs/sim_1/new/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,6 @@
+2021-04-04_13:36:14 [`úÿş]  12538 server 110987008 start
+2021-04-04_13:36:14 [`úÿş]  12538 Starting server succeed. The number of working threads is 1
+2021-04-04_13:36:19 [     ]  12538 uri:/index.html,addr:0.0.0.0:57093,start:2021-04-04_13:36:19,duration:93923
+2021-04-04_13:36:30 [Ğp ]  12538 timer:connection timeout
+2021-04-04_13:36:30 [Ğp ]  12538 timer:connection timeout
+2021-04-04_13:36:30 [     ]  12538 uri:/index.html,addr:0.0.0.0:57093,start:2021-04-04_13:36:30,duration:8985

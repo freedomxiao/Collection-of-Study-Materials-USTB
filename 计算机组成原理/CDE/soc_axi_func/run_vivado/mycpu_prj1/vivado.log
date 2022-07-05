@@ -1,0 +1,2197 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar  4 19:31:00 2021
+# Process ID: 44972
+# Current directory: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent57608 C:\Users\Peanut\Desktop\CDE\soc_axi_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr
+INFO: [Project 1-313] Project file moved from 'E:/nscscc2019/develop/func_test_v0.03/soc_axi_func/run_vivado/mycpu_prj1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'axi_crossbar_1x2_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'clk_pll_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'axi_ram_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files', nor could it be found using path 'E:/nscscc2019/develop/func_test_v0.03/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/Vivado/2018.3/data/ip'.
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1025.070 ; gain = 421.617
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v C:/Users/Peanut/Desktop/CDE/cpu/mmu/StaticMMU.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v C:/Users/Peanut/Desktop/CDE/cpu/bus/AXIAdapter.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v C:/Users/Peanut/Desktop/CDE/cpu/mycpu_top.v C:/Users/Peanut/Desktop/CDE/cpu/TinyMIPS.v C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v C:/Users/Peanut/Desktop/CDE/cpu/include/iobuf.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v}
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.527 ; gain = 2.617
+export_ip_user_files -of_objects  [get_files  C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci] -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+set_property include_dirs C:/Users/Peanut/Desktop/CDE/cpu/include [current_fileset]
+update_compile_order -fileset sources_1
+set_property is_global_include true [get_files  {C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v}]
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_pll'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1115.137 ; gain = 0.000
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'axi_ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_ram'...
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1115.137 ; gain = 0.000
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_crossbar_1x2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_crossbar_1x2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_crossbar_1x2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_crossbar_1x2'...
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_clock_converter'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_clock_converter'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_clock_converter'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'axi_clock_converter'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_clock_converter'...
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset axi_clock_converter
+set_property top axi_clock_converter [get_fileset axi_clock_converter]
+move_files -fileset [get_fileset axi_clock_converter] [get_files -of_objects [get_fileset sources_1] C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci]
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'InternalCrossbar'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'InternalCrossbar'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'InternalCrossbar'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'InternalCrossbar'...
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset InternalCrossbar
+set_property top InternalCrossbar [get_fileset InternalCrossbar]
+move_files -fileset [get_fileset InternalCrossbar] [get_files -of_objects [get_fileset sources_1] C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci]
+launch_run {axi_ram_synth_1 axi_crossbar_1x2_synth_1 axi_clock_converter_synth_1 InternalCrossbar_synth_1}
+[Thu Mar  4 19:39:02 2021] Launched axi_ram_synth_1, axi_crossbar_1x2_synth_1, axi_clock_converter_synth_1, InternalCrossbar_synth_1...
+Run output will be captured here:
+axi_ram_synth_1: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/axi_ram_synth_1/runme.log
+axi_crossbar_1x2_synth_1: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/axi_crossbar_1x2_synth_1/runme.log
+axi_clock_converter_synth_1: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/axi_clock_converter_synth_1/runme.log
+InternalCrossbar_synth_1: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.runs/InternalCrossbar_synth_1/runme.log
+wait_on_run axi_ram_synth_1
+
+[Thu Mar  4 19:39:03 2021] Waiting for axi_ram_synth_1 to finish...
+[Thu Mar  4 19:39:08 2021] Waiting for axi_ram_synth_1 to finish...
+[Thu Mar  4 19:39:14 2021] Waiting for axi_ram_synth_1 to finish...
+[Thu Mar  4 19:39:19 2021] Waiting for axi_ram_synth_1 to finish...
+[Thu Mar  4 19:39:29 2021] Waiting for axi_ram_synth_1 to finish...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+[Thu Mar  4 19:39:34 2021] Interrupt received
+
+*** Running vivado
+    with args -log axi_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_ram.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source axi_ram.tcl -notrace
+Command: synth_design -top axi_ram -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 65908 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 395.063 ; gain = 102.621
+---------------------------------------------------------------------------------
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 1122.844 ; gain = 0.000
+INFO: [Common 17-344] 'wait_on_run' was cancelled
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/sim/axi_clock_converter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_clock_converter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/sim/InternalCrossbar.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InternalCrossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/bus/AXIAdapter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIAdapter
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/Peanut/Desktop/CDE/cpu/bus/AXIAdapter.v:73]
+WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [C:/Users/Peanut/Desktop/CDE/cpu/bus/AXIAdapter.v:87]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/mmu/StaticMMU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StaticMMU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/TinyMIPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TinyMIPS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/soc_axi_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_axi_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.844 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_2 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_18 -L fifo_generator_v13_2_3 -L axi_data_fifo_v2_1_17 -L axi_crossbar_v2_1_19 -L axi_clock_converter_v2_1_17 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 'int' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/soc_axi_lite_top.v:320]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'arlen' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/soc_axi_lite_top.v:692]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'awlen' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/soc_axi_lite_top.v:708]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.StaticMMU
+Compiling module xil_defaultlib.AXIAdapter
+Compiling module xil_defaultlib.TinyMIPS
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_decode...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_srl_f...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_si_transact...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_splitter
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_reg_s...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_wdata_route...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_si_transact...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_si_transact...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_decode...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_reg_s...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_18.axi_register_slice_v2_1_18_axi_r...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_reg_s...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_srl_f...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_arbite...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_decerr_slav...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_crossbar(C_...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_axi_crossba...
+Compiling module xil_defaultlib.InternalCrossbar
+Compiling module xil_defaultlib.mycpu_top
+Compiling module xil_defaultlib.axi_wrap
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_sync_stag...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_a...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_p...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_a...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_p...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_a...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_p...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_a...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_p...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3(C_DATA_CO...
+Compiling module axi_clock_converter_v2_1_17.axi_clock_converter_v2_1_17_axi_...
+Compiling module xil_defaultlib.axi_clock_converter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_decode...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_arbiter_res...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_si_transact...
+Compiling module axi_data_fifo_v2_1_17.axi_data_fifo_v2_1_17_axic_reg_s...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_wdata_route...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_wdata_mux(C...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_wdata_mux(C...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_addr_arbite...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_crossbar(C_...
+Compiling module axi_crossbar_v2_1_19.axi_crossbar_v2_1_19_axi_crossba...
+Compiling module xil_defaultlib.axi_crossbar_1x2
+Compiling module blk_mem_gen_v8_4_2.beh_vlog_ff_clr_v8_4(INIT=1'b0)
+Compiling module blk_mem_gen_v8_4_2.beh_vlog_ff_pre_v8_4(INIT=1'b1)
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b101111...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b101010...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011010...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011000...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b0111)
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b111110...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b01000)
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b100010...
+Compiling module blk_mem_gen_v8_4_2.write_netlist_v8_4(C_AXI_TYPE=1)
+Compiling module blk_mem_gen_v8_4_2.blk_mem_axi_write_wrapper_beh_v8...
+Compiling module blk_mem_gen_v8_4_2.beh_vlog_ff_ce_clr_v8_4(INIT=1'b...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b01011)
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b0100)
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b111011...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b01)
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010000...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011101...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b111111...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b111100...
+Compiling module blk_mem_gen_v8_4_2.beh_vlog_muxf7_v8_4
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010101...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011111...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b010001...
+Compiling module blk_mem_gen_v8_4_2.STATE_LOGIC_v8_4(INIT=64'b011100...
+Compiling module blk_mem_gen_v8_4_2.read_netlist_v8_4(C_ADDRB_WIDTH=...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_axi_read_wrapper_beh_v8_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="art...
+Compiling module xil_defaultlib.axi_ram
+Compiling module xil_defaultlib.axi_wrap_ram
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_axi_lite_top(SIMULATION=1'b1...
+Compiling module xil_defaultlib.tb_top
+WARNING: [XSIM 43-3373] "C:/Users/Peanut/Desktop/CDE/soc_axi_func/testbench/mycpu_tb.v" Line 126. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  4 19:40:04 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 1122.844 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.soc_lite.u_axi_ram.ram.inst.axi_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1195.578 ; gain = 72.734
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 1195.578 ; gain = 72.734
+file mkdir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v w ]
+add_files -fileset sim_1 C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v
+update_compile_order -fileset sim_1
+set_property top cpu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.504 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1239.504 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <MultDiv> not found while processing module instance <u_MultDiv> [C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v:160]
+ERROR: [VRFC 10-2063] Module <HILOReadProxy> not found while processing module instance <u_HILOReadProxy> [C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v:411]
+ERROR: [VRFC 10-2063] Module <HILO> not found while processing module instance <u_HILO> [C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v:427]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  4 19:49:28 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1239.504 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1239.504 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 1000ns
+WARNING: File C:UsersPeanutDesktopCDEsoc_axi_funcrun_vivadomycpu_prj1mycpu.simsim_1behavxsiminst_rom.bin referenced on C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v at line 20 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1239.504 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 1000ns
+WARNING: File C:UsersPeanutDesktopCDEsoc_axi_funcrun_vivadomycpu_prj1mycpu.simsim_1behavxsiminst_rom.bin referenced on C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v at line 20 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1239.504 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1239.504 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.504 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1239.504 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1279.805 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.805 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1279.805 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1389.941 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar  5 19:50:33 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1389.941 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1389.941 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1389.941 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Vivado/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim/axi_ram.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FunctGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OperandGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineController
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineDeliver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegReadProxy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8de8692e6f7648c084645fde77f29b66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'stall' [C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v:50]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=32)
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.RegGen
+Compiling module xil_defaultlib.FunctGen
+Compiling module xil_defaultlib.OperandGen
+Compiling module xil_defaultlib.BranchGen
+Compiling module xil_defaultlib.MemGen
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=6)
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=5)
+Compiling module xil_defaultlib.PipelineDeliver
+Compiling module xil_defaultlib.PipelineDeliver(WIDTH=4)
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.RegReadProxy
+Compiling module xil_defaultlib.PipelineController
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.941 ; gain = 0.000
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1389.941 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  5 21:10:05 2021...

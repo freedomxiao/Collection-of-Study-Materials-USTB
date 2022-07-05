@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar  4 19:31:00 2021
+# Process ID: 44972
+# Current directory: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent57608 C:\Users\Peanut\Desktop\CDE\soc_axi_func\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/vivado.log
+# Journal file: C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.xpr
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEMWB.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/IFID.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/ID.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/OperandGen.v C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegFile.v C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EX.v C:/Users/Peanut/Desktop/CDE/cpu/sim/RAM.v C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/ex/EXMEM.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/MemGen.v C:/Users/Peanut/Desktop/CDE/cpu/mmu/StaticMMU.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/IDEX.v C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineDeliver.v C:/Users/Peanut/Desktop/CDE/cpu/bus/AXIAdapter.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/wb/WB.v C:/Users/Peanut/Desktop/CDE/cpu/core/storage/RegReadProxy.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/FunctGen.v C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci C:/Users/Peanut/Desktop/CDE/cpu/core/pipeline/PipelineController.v C:/Users/Peanut/Desktop/CDE/cpu/mycpu_top.v C:/Users/Peanut/Desktop/CDE/cpu/TinyMIPS.v C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v C:/Users/Peanut/Desktop/CDE/cpu/sim/ROM.v C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/if/PC.v C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v C:/Users/Peanut/Desktop/CDE/cpu/core/Core.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/mem/MEM.v C:/Users/Peanut/Desktop/CDE/cpu/include/iobuf.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/BranchGen.v C:/Users/Peanut/Desktop/CDE/cpu/core/stage/id/RegGen.v}
+export_ip_user_files -of_objects  [get_files  C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci] -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+set_property include_dirs C:/Users/Peanut/Desktop/CDE/cpu/include [current_fileset]
+update_compile_order -fileset sources_1
+set_property is_global_include true [get_files  {C:/Users/Peanut/Desktop/CDE/cpu/include/sim.v C:/Users/Peanut/Desktop/CDE/cpu/include/debug.v C:/Users/Peanut/Desktop/CDE/cpu/include/bus.v C:/Users/Peanut/Desktop/CDE/cpu/include/segpos.v C:/Users/Peanut/Desktop/CDE/cpu/include/pcdef.v C:/Users/Peanut/Desktop/CDE/cpu/include/funct.v C:/Users/Peanut/Desktop/CDE/cpu/include/opcode.v}]
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/clk_pll/clk_pll.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_ram/axi_ram.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset axi_clock_converter
+set_property top axi_clock_converter [get_fileset axi_clock_converter]
+move_files -fileset [get_fileset axi_clock_converter] [get_files -of_objects [get_fileset sources_1] C:/Users/Peanut/Desktop/CDE/soc_axi_func/rtl/xilinx_ip/axi_clock_converter/axi_clock_converter.xci]
+generate_target all [get_files C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci]
+export_ip_user_files -of_objects [get_files C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci] -directory C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files -ipstatic_source_dir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Modeltech_pe_edu_10.4a/xilinx_lib} {questa=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/questa} {riviera=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/riviera} {activehdl=C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset InternalCrossbar
+set_property top InternalCrossbar [get_fileset InternalCrossbar]
+move_files -fileset [get_fileset InternalCrossbar] [get_files -of_objects [get_fileset sources_1] C:/Users/Peanut/Desktop/CDE/cpu/ip/InternalCrossbar/InternalCrossbar.xci]
+launch_run {axi_ram_synth_1 axi_crossbar_1x2_synth_1 axi_clock_converter_synth_1 InternalCrossbar_synth_1}
+wait_on_run axi_ram_synth_1
+
+launch_simulation
+source tb_top.tcl
+file mkdir C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v w ]
+add_files -fileset sim_1 C:/Users/Peanut/Desktop/CDE/soc_axi_func/run_vivado/mycpu_prj1/mycpu.srcs/sim_1/new/cpu_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cpu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+relaunch_sim
+launch_simulation
+source cpu_tb.tcl
+close_sim
+launch_simulation
+source cpu_tb.tcl
+close_sim
+launch_simulation
+source cpu_tb.tcl
+close_sim
+launch_simulation
+source cpu_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+close_sim

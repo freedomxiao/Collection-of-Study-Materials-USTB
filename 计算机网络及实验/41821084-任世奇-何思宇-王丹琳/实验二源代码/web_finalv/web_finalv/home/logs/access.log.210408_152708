@@ -1,0 +1,45 @@
+2021-04-08_15:27:08 [`ç‹:ü]  27957 server 139686118971136 start
+2021-04-08_15:27:08 [`ç‹:ü]  27957 Starting server succeed. The number of working threads is 1
+2021-04-08_15:27:50 [Ð@€5]  27957 timer:connection timeout
+2021-04-08_15:27:50 [p?€5]  27957 uri invalid ,404,uri:/img/title1.png( 2:)
+2021-04-08_15:27:50 [     ]  27957 uri:/img/title1.png,addr:0.0.0.0:0,start:2021-04-08_15:27:50,duration:118
+2021-04-08_15:27:50 [€@€5]  27957 conn_handle:connection error occur( 2:)
+2021-04-08_15:27:50 [p?€5]  27957 uri invalid ,404,uri:/img/title1.png( 2:@Ëø5)
+2021-04-08_15:27:50 [     ]  27957 uri:/img/title1.png,addr:0.0.0.0:0,start:2021-04-08_15:27:50,duration:126
+2021-04-08_15:27:54 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:27:54 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:27:54,duration:107
+2021-04-08_15:28:09 [€@€5]  27957 conn_handle:connection error occur( 11:€­û)
+2021-04-08_15:28:14 [     ]  27957 uri:/img/title.png,addr:0.0.0.0:0,start:2021-04-08_15:28:14,duration:4692801
+2021-04-08_15:28:58 [Ð@€5]  27957 timer:connection timeout
+2021-04-08_15:28:58 [     ]  27957 uri:/,addr:0.0.0.0:0,start:2021-04-08_15:28:58,duration:176
+2021-04-08_15:28:58 [p?€5]  27957 uri invalid ,404,uri:/img( 11:@Ëø5)
+2021-04-08_15:28:58 [     ]  27957 uri:/img,addr:0.0.0.0:0,start:2021-04-08_15:28:58,duration:180
+2021-04-08_15:28:58 [     ]  27957 uri:/,addr:0.0.0.0:0,start:2021-04-08_15:28:58,duration:135
+2021-04-08_15:28:58 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:28:58 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:28:58,duration:159
+2021-04-08_15:28:58 [     ]  27957 uri:/,addr:0.0.0.0:0,start:2021-04-08_15:28:58,duration:112
+2021-04-08_15:29:02 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:29:02 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:29:02,duration:169
+2021-04-08_15:29:05 [p?€5]  27957 uri invalid ,404,uri:/img/( 2:@Ëø5)
+2021-04-08_15:29:05 [     ]  27957 uri:/img/,addr:0.0.0.0:0,start:2021-04-08_15:29:05,duration:183
+2021-04-08_15:29:05 [p?€5]  27957 uri invalid ,404,uri:/img/title( 2:@Ëø5)
+2021-04-08_15:29:05 [     ]  27957 uri:/img/title,addr:0.0.0.0:0,start:2021-04-08_15:29:05,duration:143
+2021-04-08_15:29:07 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:29:07 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:29:07,duration:175
+2021-04-08_15:29:07 [p?€5]  27957 uri invalid ,404,uri:/img/title%20pn( 2:@Ëø5)
+2021-04-08_15:29:07 [     ]  27957 uri:/img/title%20pn,addr:0.0.0.0:0,start:2021-04-08_15:29:07,duration:142
+2021-04-08_15:29:07 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:29:07 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:29:07,duration:163
+2021-04-08_15:29:07 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:29:07 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:29:07,duration:166
+2021-04-08_15:29:09 [p?€5]  27957 uri invalid ,404,uri:/img/title%20png( 2:@Ëø5)
+2021-04-08_15:29:09 [     ]  27957 uri:/img/title%20png,addr:0.0.0.0:0,start:2021-04-08_15:29:09,duration:151
+2021-04-08_15:29:09 [p?€5]  27957 uri invalid ,404,uri:/img/titlepng( 2:@Ëø5)
+2021-04-08_15:29:09 [     ]  27957 uri:/img/titlepng,addr:0.0.0.0:0,start:2021-04-08_15:29:09,duration:152
+2021-04-08_15:29:10 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:29:10 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:29:10,duration:193
+2021-04-08_15:29:10 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)
+2021-04-08_15:29:10 [     ]  27957 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-08_15:29:10,duration:133
+2021-04-08_15:29:17 [     ]  27957 uri:/img/title.png,addr:0.0.0.0:0,start:2021-04-08_15:29:17,duration:5198441
+2021-04-08_15:29:17 [     ]  27957 uri:/img/title.png,addr:0.0.0.0:0,start:2021-04-08_15:29:17,duration:5523535
+2021-04-08_15:29:18 [p?€5]  27957 uri invalid ,404,uri:/favicon.ico( 2:@Ëø5)

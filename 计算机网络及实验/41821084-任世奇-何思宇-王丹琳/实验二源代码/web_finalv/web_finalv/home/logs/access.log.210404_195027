@@ -1,0 +1,4 @@
+2021-04-04_19:50:27 [P}|5ÿ]  3994 server 140354342684416 start
+2021-04-04_19:50:27 [P}|5ÿ]  3994 Starting server succeed. The number of working threads is 1
+2021-04-04_19:50:31 [     ]  3994 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_19:50:31,duration:204
+2021-04-04_19:50:36 [     ]  3994 uri:/,addr:0.0.0.0:0,start:2021-04-04_19:50:36,duration:185

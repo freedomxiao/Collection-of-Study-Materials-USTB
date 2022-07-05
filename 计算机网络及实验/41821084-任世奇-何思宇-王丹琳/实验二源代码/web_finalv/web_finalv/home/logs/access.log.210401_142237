@@ -1,0 +1,5 @@
+2021-04-01_14:22:37 [0ìQü]  24202 server 140424786265856 start
+2021-04-01_14:22:37 [0ìQü]  24202 Starting server succeed. The number of working threads is 1
+2021-04-01_14:22:41 [€¯€1·]  24202 uri invalid ,404,uri:ex.html( 2:)
+2021-04-01_14:22:41 [     ]  24202 fill_send_buff:read response file home/webhome/404.html error( 2:O»1·)
+2021-04-01_14:22:41 [@°€1·]  24202 resp_body_handle:fill_send_buff error home/webhome/404.html ( 2:)

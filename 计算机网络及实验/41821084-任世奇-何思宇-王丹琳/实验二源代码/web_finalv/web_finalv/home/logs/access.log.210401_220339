@@ -1,0 +1,5 @@
+2021-04-01_22:03:39 [0êĞü]  30934 server 139957841471232 start
+2021-04-01_22:03:39 [0êĞü]  30934 Starting server succeed. The number of working threads is 1
+2021-04-01_22:03:55 [plyJ]  30934 uri invalid ,404,uri:/4061594658432547wer( 2:)
+2021-04-01_22:03:55 [ğlyJ]  30934 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:03:55 [0lyJ]  30934 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)

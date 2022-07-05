@@ -1,0 +1,5 @@
+2021-04-01_14:47:35 [0ŸLş]  28405 server 140193949316864 start
+2021-04-01_14:47:35 [0ŸLş]  28405 Starting server succeed. The number of working threads is 1
+2021-04-01_14:47:38 [€_Œr]  28405 uri invalid ,404,uri:ex.html( 2:)
+2021-04-01_14:47:38 [     ]  28405 fill_send_buff:read response file home/webhome/404.html error( 2:ÿÆr)
+2021-04-01_14:47:38 [@`Œr]  28405 resp_body_handle:fill_send_buff error home/webhome/404.html ( 2:)

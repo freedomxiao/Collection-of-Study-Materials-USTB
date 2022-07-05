@@ -1,0 +1,9 @@
+2021-04-01_22:54:57 [b¥¸ü]  6738 server 139848926680832 start
+2021-04-01_22:54:57 [b¥¸ü]  6738 Starting server succeed. The number of working threads is 1
+2021-04-01_22:55:01 [p¿˜1]  6738 uri invalid ,404,uri:/6464987987987987( 2:)
+2021-04-01_22:55:01 [ð¿˜1]  6738 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:55:01 [0À˜1]  6738 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_22:55:07 [     ]  6738 uri:/404.html,addr:252.127.0.0:42424,start:2021-04-01_22:55:07,duration:548
+2021-04-01_23:02:43 [p¿˜1]  6738 uri invalid ,404,uri:/8917387183718231.html( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_23:02:43 [ð¿˜1]  6738 fill_send_buff:read response file home/webhome/404.html error( 14:D† {$V)
+2021-04-01_23:02:43 [0À˜1]  6738 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:ðÄ˜1)

@@ -1,0 +1,6 @@
+2021-04-24_14:13:03 [ÿ¢•ü]  5851 server 140240714479360 start
+2021-04-24_14:13:03 [ÿ¢•ü]  5851 Starting server succeed. The number of working threads is 1
+2021-04-24_14:13:17 [     ]  5851 uri:/index.html,addr:0.0.0.0:0,start:2021-04-24_14:13:17,duration:686
+2021-04-24_14:13:29 [Ð øUŒ]  5851 timer:connection timeout
+2021-04-24_14:13:36 [Ð øUŒ]  5851 timer:connection timeout
+2021-04-24_14:13:42 [     ]  5851 uri:/img/title.png,addr:0.0.0.0:0,start:2021-04-24_14:13:42,duration:6787516

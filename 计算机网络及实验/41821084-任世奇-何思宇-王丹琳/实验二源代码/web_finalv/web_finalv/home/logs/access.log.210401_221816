@@ -1,0 +1,5 @@
+2021-04-01_22:18:16 [àƒüZÿ]  886 server 139924809049856 start
+2021-04-01_22:18:16 [àƒüZÿ]  886 Starting server succeed. The number of working threads is 1
+2021-04-01_22:18:30 [pÏ‰ÈB]  886 uri invalid ,404,uri:/6464987987987987( 2:)
+2021-04-01_22:18:30 [ðÏ‰ÈB]  886 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:18:30 [0Ð‰ÈB]  886 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)

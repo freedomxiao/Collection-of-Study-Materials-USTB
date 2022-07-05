@@ -1,0 +1,5 @@
+2021-04-01_14:48:51 [`kxmı]  28647 server 140416507668224 start
+2021-04-01_14:48:51 [`kxmı]  28647 Starting server succeed. The number of working threads is 1
+2021-04-01_14:48:54 [€ODµ]  28647 uri invalid ,404,uri:ex.html( 2:)
+2021-04-01_14:48:54 [     ]  28647 fill_send_buff:read response file home/webhome/404.html error( 2:ïIDµ)
+2021-04-01_14:48:54 [@PDµ]  28647 resp_body_handle:fill_send_buff error home/webhome/404.html ( 2:)

@@ -1,0 +1,29 @@
+2021-04-01_18:52:38 [ðc¢þ]  2152 server 140718531536640 start
+2021-04-01_18:52:38 [ðc¢þ]  2152 Starting server succeed. The number of working threads is 1
+2021-04-01_18:52:41 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:41,duration:3146
+2021-04-01_18:52:44 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:44,duration:402
+2021-04-01_18:52:46 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:46,duration:378
+2021-04-01_18:52:49 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:49,duration:500
+2021-04-01_18:52:50 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:50,duration:2559
+2021-04-01_18:52:51 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:51,duration:3305
+2021-04-01_18:52:53 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:53,duration:517
+2021-04-01_18:52:53 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:52:53,duration:807
+2021-04-01_18:53:00 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:53:00,duration:3340
+2021-04-01_18:53:09 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:53:09,duration:563
+2021-04-01_18:53:20 [     ]  2152 uri:/index.html,addr:254.127.0.0:25506,start:2021-04-01_18:53:20,duration:369
+2021-04-01_18:53:44 [     ]  2152 uri:/,addr:254.127.0.0:25506,start:2021-04-01_18:53:44,duration:375
+2021-04-01_18:53:51 [pÏ–û]  2152 uri invalid ,404,uri:/404( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_18:53:51 [ðÏ–û]  2152 fill_send_buff:read response file home/webhome/404.html error( 14:D£àk¶U)
+2021-04-01_18:53:51 [0Ð–û]  2152 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðÔ–û)
+2021-04-01_18:53:56 [     ]  2152 uri:/404.html,addr:254.127.0.0:25506,start:2021-04-01_18:53:56,duration:467
+2021-04-01_18:54:01 [pÏ–û]  2152 uri invalid ,404,uri:/404232313( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_18:54:01 [ðÏ–û]  2152 fill_send_buff:read response file home/webhome/404.html error( 14:D£àk¶U)
+2021-04-01_18:54:01 [0Ð–û]  2152 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðÔ–û)
+2021-04-01_18:54:35 [pÏ–û]  2152 uri invalid ,404,uri:/918312838123918.html( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_18:54:35 [ðÏ–û]  2152 fill_send_buff:read response file home/webhome/404.html error( 14:D£àk¶U)
+2021-04-01_18:54:35 [0Ð–û]  2152 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðÔ–û)
+2021-04-01_18:54:35 [     ]  2152 uri:/404.html,addr:254.127.0.0:25506,start:2021-04-01_18:54:35,duration:379
+2021-04-01_18:54:36 [     ]  2152 uri:/404.html,addr:254.127.0.0:25506,start:2021-04-01_18:54:36,duration:423
+2021-04-01_18:54:37 [     ]  2152 uri:/404.html,addr:254.127.0.0:25506,start:2021-04-01_18:54:37,duration:366
+2021-04-01_18:54:51 [     ]  2152 uri:/,addr:254.127.0.0:25506,start:2021-04-01_18:54:51,duration:24169
+2021-04-01_18:55:21 [ÐÐ–û]  2152 timer:connection timeout

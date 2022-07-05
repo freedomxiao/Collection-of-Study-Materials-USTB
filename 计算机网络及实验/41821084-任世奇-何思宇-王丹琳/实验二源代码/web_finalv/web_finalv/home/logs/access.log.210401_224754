@@ -1,0 +1,5 @@
+2021-04-01_22:47:54 [ÀDÀ;ü]  5643 server 139932724131584 start
+2021-04-01_22:47:54 [ÀDÀ;ü]  5643 Starting server succeed. The number of working threads is 1
+2021-04-01_22:47:57 [p_P D]  5643 uri invalid ,404,uri:/6464987987987987( 2:)
+2021-04-01_22:47:57 [ð_P D]  5643 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:47:57 [0`P D]  5643 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)

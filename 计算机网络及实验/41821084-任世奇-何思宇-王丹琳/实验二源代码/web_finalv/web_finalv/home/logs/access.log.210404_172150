@@ -1,0 +1,5 @@
+2021-04-04_17:21:50 [À—5Pý]  14451 server 140063410386688 start
+2021-04-04_17:21:50 [À—5Pý]  14451 Starting server succeed. The number of working threads is 1
+2021-04-04_17:21:56 [     ]  14451 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_17:21:56,duration:904
+2021-04-04_17:21:56 [p_Òc]  14451 uri invalid ,404,uri:/favicon.ico( 2:@ëJc)
+2021-04-04_17:21:56 [     ]  14451 uri:/favicon.ico,addr:0.0.0.0:0,start:2021-04-04_17:21:56,duration:289

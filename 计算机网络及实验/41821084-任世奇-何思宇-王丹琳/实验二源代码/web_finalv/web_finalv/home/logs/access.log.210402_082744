@@ -1,0 +1,10 @@
+2021-04-02_08:27:44 [àùHÿ]  32697 server 139979756316416 start
+2021-04-02_08:27:44 [àùHÿ]  32697 Starting server succeed. The number of working threads is 1
+2021-04-02_08:28:04 [     ]  32697 uri:/index.html,addr:255.127.0.0:18707,start:2021-04-02_08:28:04,duration:636
+2021-04-02_08:28:05 [p¦“O]  32697 uri invalid ,404,uri:/apple-touch-icon-precomposed.png( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-02_08:28:05 [     ]  32697 uri:/apple-touch-icon-precomposed.png,addr:255.127.0.0:18707,start:2021-04-02_08:28:05,duration:1148
+2021-04-02_08:28:05 [p¦“O]  32697 uri invalid ,404,uri:/favicon.ico( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-02_08:28:05 [     ]  32697 uri:/favicon.ico,addr:255.127.0.0:18707,start:2021-04-02_08:28:05,duration:1018
+2021-04-02_08:28:05 [p¦“O]  32697 uri invalid ,404,uri:/apple-touch-icon.png( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-02_08:28:05 [     ]  32697 uri:/apple-touch-icon.png,addr:255.127.0.0:18707,start:2021-04-02_08:28:05,duration:4828
+2021-04-02_08:28:35 [0¦“O]  32697 cannot get enough head info( 2:ğ”¦“O)

@@ -1,0 +1,9 @@
+2021-04-04_19:51:40 [     ]  4211 server 140302884787968 start
+2021-04-04_19:51:40 [     ]  4211 Starting server succeed. The number of working threads is 1
+2021-04-04_19:51:48 [p¿›Ïš]  4211 uri invalid ,404,uri:/193891839193( 2:)
+2021-04-04_19:51:48 [     ]  4211 uri:/193891839193,addr:0.0.0.0:0,start:2021-04-04_19:51:48,duration:218
+2021-04-04_19:51:55 [     ]  4211 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_19:51:55,duration:177
+2021-04-04_19:52:05 [     ]  4211 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_19:52:05,duration:259
+2021-04-04_19:52:16 [p¿›Ïš]  4211 uri invalid ,404,uri:/news.png( 2:@KÐš)
+2021-04-04_19:52:16 [     ]  4211 uri:/news.png,addr:0.0.0.0:0,start:2021-04-04_19:52:16,duration:152
+2021-04-04_19:52:21 [     ]  4211 uri:/news.html,addr:0.0.0.0:0,start:2021-04-04_19:52:21,duration:131

@@ -1,0 +1,5 @@
+2021-04-04_19:57:09 [Ğ7,ş]  5094 server 140074138441472 start
+2021-04-04_19:57:09 [Ğ7,ş]  5094 Starting server succeed. The number of working threads is 1
+2021-04-04_19:57:14 [pCe]  5094 uri invalid ,404,uri:/img/title1.png( 2:)
+2021-04-04_19:57:14 [     ]  5094 uri:/img/title1.png,addr:0.0.0.0:0,start:2021-04-04_19:57:14,duration:287
+2021-04-04_19:57:25 [     ]  5094 uri:/img/title.png,addr:0.0.0.0:0,start:2021-04-04_19:57:25,duration:6582451

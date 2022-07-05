@@ -1,0 +1,11 @@
+2021-04-01_22:37:34 [ ØDCÿ]  3961 server 139951778068224 start
+2021-04-01_22:37:34 [ ØDCÿ]  3961 Starting server succeed. The number of working threads is 1
+2021-04-01_22:37:40 [p_I]  3961 uri invalid ,404,uri:/6464987987987987( 2:)
+2021-04-01_22:37:40 [ð_I]  3961 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:37:40 [0`I]  3961 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_22:39:26 [p_I]  3961 uri invalid ,404,uri:/6464987987987987( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_22:39:26 [ð_I]  3961 fill_send_buff:read response file home/webhome/404.html error( 14:$F¹ÒGV)
+2021-04-01_22:39:26 [0`I]  3961 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_22:41:05 [     ]  3961 uri:/index.html,addr:255.127.0.0:17475,start:2021-04-01_22:41:05,duration:401
+2021-04-01_22:41:21 [     ]  3961 uri:/test.html,addr:255.127.0.0:17475,start:2021-04-01_22:41:21,duration:320
+2021-04-01_22:41:25 [     ]  3961 uri:/404.html,addr:255.127.0.0:17475,start:2021-04-01_22:41:25,duration:936

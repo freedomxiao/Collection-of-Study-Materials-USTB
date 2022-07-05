@@ -1,0 +1,5 @@
+2021-04-01_14:51:46 [ =­ı]  29130 server 140585137678080 start
+2021-04-01_14:51:46 [ =­ı]  29130 Starting server succeed. The number of working threads is 1
+2021-04-01_14:51:50 [€1‡Ü]  29130 uri invalid ,404,uri:ex.html( 2:)
+2021-04-01_14:51:50 [     ]  29130 fill_send_buff:read response file home/webhome/404.html error( 14:¯k‡Ü)
+2021-04-01_14:51:50 [@1‡Ü]  29130 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:)

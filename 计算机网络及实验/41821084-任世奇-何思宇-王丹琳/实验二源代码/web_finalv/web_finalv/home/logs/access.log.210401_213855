@@ -1,0 +1,14 @@
+2021-04-01_21:38:55 [`>ý]  27140 server 140215684593408 start
+2021-04-01_21:38:55 [`>ý]  27140 Starting server succeed. The number of working threads is 1
+2021-04-01_21:39:03 [     ]  27140 uri:/index.html,addr:253.127.0.0:3646,start:2021-04-01_21:39:03,duration:394
+2021-04-01_21:39:19 [     ]  27140 uri:/index.html,addr:253.127.0.0:3646,start:2021-04-01_21:39:19,duration:495
+2021-04-01_21:39:52 [p_‚†]  27140 uri invalid ,404,uri:/41231.html( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_21:39:52 [ð_‚†]  27140 fill_send_buff:read response file home/webhome/404.html error( 14:l4YuìU)
+2021-04-01_21:39:52 [0`‚†]  27140 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðd‚†)
+2021-04-01_21:40:00 [     ]  27140 uri:/404.html,addr:253.127.0.0:3646,start:2021-04-01_21:40:00,duration:298
+2021-04-01_21:40:12 [p_‚†]  27140 uri invalid ,404,uri:/4061594658498( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_21:40:12 [ð_‚†]  27140 fill_send_buff:read response file home/webhome/404.html error( 14:l4YuìU)
+2021-04-01_21:40:12 [0`‚†]  27140 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðd‚†)
+2021-04-01_21:55:24 [p_‚†]  27140 uri invalid ,404,uri:/406159465849898989( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_21:55:24 [ð_‚†]  27140 fill_send_buff:read response file home/webhome/404.html error( 14:l4YuìU)
+2021-04-01_21:55:24 [0`‚†]  27140 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðd‚†)

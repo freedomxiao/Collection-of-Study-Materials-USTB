@@ -1,0 +1,4 @@
+2021-04-04_21:38:02 [ Á+§ü]  19631 server 139706683447040 start
+2021-04-04_21:38:02 [ Á+§ü]  19631 Starting server succeed. The number of working threads is 1
+2021-04-04_21:38:18 [     ]  19631 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_21:38:18,duration:12007
+2021-04-04_21:38:28 [     ]  19631 uri:/news.html,addr:0.0.0.0:0,start:2021-04-04_21:38:28,duration:365

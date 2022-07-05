@@ -1,0 +1,4 @@
+2021-04-01_17:36:19 [Şı]  22480 server 139684514563840 start
+2021-04-01_17:36:19 [Şı]  22480 Starting server succeed. The number of working threads is 1
+2021-04-01_17:36:34 [     ]  22480 uri:/index.html,addr:253.127.0.0:8158,start:2021-04-01_17:36:34,duration:500
+2021-04-01_17:36:39 [     ]  22480 uri:/index.html,addr:253.127.0.0:8158,start:2021-04-01_17:36:39,duration:403

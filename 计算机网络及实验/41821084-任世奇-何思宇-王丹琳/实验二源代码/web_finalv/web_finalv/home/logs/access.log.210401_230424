@@ -1,0 +1,15 @@
+2021-04-01_23:04:24 [ 9Èü]  8231 server 140557087135488 start
+2021-04-01_23:04:24 [ 9Èü]  8231 Starting server succeed. The number of working threads is 1
+2021-04-01_23:04:28 [p¿?ÿÕ]  8231 uri invalid ,404,uri:/8917387183718231.html( 2:)
+2021-04-01_23:04:28 [ð¿?ÿÕ]  8231 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_23:04:28 [0À?ÿÕ]  8231 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)
+2021-04-01_23:06:09 [     ]  8231 uri:/index.html,addr:252.127.0.0:14792,start:2021-04-01_23:06:09,duration:575
+2021-04-01_23:06:35 [p¿?ÿÕ]  8231 uri invalid ,404,uri:/404( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_23:06:35 [ð¿?ÿÕ]  8231 fill_send_buff:read response file home/webhome/404.html error( 14:¤Ö¿³ÔU)
+2021-04-01_23:06:35 [0À?ÿÕ]  8231 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:ðÄ?ÿÕ)
+2021-04-01_23:06:47 [ÐÀ?ÿÕ]  8231 timer:connection timeout
+2021-04-01_23:06:47 [ÐÀ?ÿÕ]  8231 timer:connection timeout
+2021-04-01_23:06:47 [     ]  8231 uri:/404.html,addr:252.127.0.0:14792,start:2021-04-01_23:06:47,duration:3463
+2021-04-01_23:06:47 [p¿?ÿÕ]  8231 uri invalid ,404,uri:/favicon.ico( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_23:06:47 [ð¿?ÿÕ]  8231 fill_send_buff:read response file home/webhome/404.html error( 14:¤Ö¿³ÔU)
+2021-04-01_23:06:47 [0À?ÿÕ]  8231 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:ðÄ?ÿÕ)

@@ -1,0 +1,4 @@
+2021-04-04_14:33:46 [à^£þ]  21761 server 139869878212352 start
+2021-04-04_14:33:46 [à^£þ]  21761 Starting server succeed. The number of working threads is 1
+2021-04-04_14:33:54 [     ]  21761 uri:/index.html,addr:0.0.0.0:0,start:2021-04-04_14:33:54,duration:454
+2021-04-04_14:34:05 [     ]  21761 uri:/news.html,addr:0.0.0.0:0,start:2021-04-04_14:34:05,duration:765

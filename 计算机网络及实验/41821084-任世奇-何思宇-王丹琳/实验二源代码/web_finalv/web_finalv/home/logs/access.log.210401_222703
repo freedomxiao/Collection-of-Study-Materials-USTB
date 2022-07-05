@@ -1,0 +1,5 @@
+2021-04-01_22:27:03 [àë†ÿ]  2271 server 140276232955648 start
+2021-04-01_22:27:03 [àë†ÿ]  2271 Starting server succeed. The number of working threads is 1
+2021-04-01_22:27:06 [p	›”]  2271 uri invalid ,404,uri:/6464987987987987( 2:)
+2021-04-01_22:27:06 [ð	›”]  2271 fill_send_buff:read response file home/webhome/404.html error( 14:ÿÿÿÿ)
+2021-04-01_22:27:06 [0	›”]  2271 resp_body_handle:fill_send_buff first error home/webhome/404.html ( 14:)

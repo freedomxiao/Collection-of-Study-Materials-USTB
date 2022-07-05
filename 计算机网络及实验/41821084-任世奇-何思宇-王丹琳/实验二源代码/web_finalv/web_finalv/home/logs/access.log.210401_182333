@@ -1,0 +1,6 @@
+2021-04-01_18:23:33 [ÐGŒëÿ]  29828 server 140358428677888 start
+2021-04-01_18:23:33 [ÐGŒëÿ]  29828 Starting server succeed. The number of working threads is 1
+2021-04-01_18:23:34 [     ]  29828 uri:/index.html,addr:255.127.0.0:36075,start:2021-04-01_18:23:34,duration:934
+2021-04-01_18:23:54 [p?H¾§]  29828 uri invalid ,404,uri:/SSSS.html( 2:ÿÿÿÿÿÿÿÿ)
+2021-04-01_18:23:54 [ð?H¾§]  29828 fill_send_buff:read response file home/webhome/404.html error( 14:ƒý%V)
+2021-04-01_18:23:54 [0@H¾§]  29828 resp_body_handle:fill_send_buff error home/webhome/404.html ( 14:ðDH¾§)
