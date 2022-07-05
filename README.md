@@ -2,17 +2,17 @@
  - 大二上
  	-
  - 大二下
- 	- [数值计算方法]()
- 	- [数学实验]()
- 	- [工科物理实验AII]()
- 	- [马克思主义基本原理]()
- 	- [体育IV]()
- 	- [大学生职业发展与就业指导II]()
- 	- [	计算机组成原理]()
- 	- [数据结构A]()
- 	- [电子技术实习]()
- 	- [web程序设计]()
- 	- [英语（美语）语音语调]()
+ 	- 数值计算方法
+ 	- 数学实验
+ 	- 工科物理实验AII
+ 	- [马克思主义基本原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86)
+ 	- [计算机组成原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86)
+ 	- 数据结构A
+ 	- 电子技术实习
+ 	- 体育IV
+ 	- 大学生职业发展与就业指导II
+ 	- web程序设计
+ 	- 英语（美语）语音语调
  - 大三上
  	-	[数据库系统原理B（双语）	](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86B%EF%BC%88%E5%8F%8C%E8%AF%AD%EF%BC%89)
  	-	计算机接口实验
