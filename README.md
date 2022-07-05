@@ -16,7 +16,7 @@
  	- 电子信息材料
  - 大二下
  	- 数值计算方法
- 	- 数学实验
+ 	- [数学实验](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E5%AD%A6%E5%AE%9E%E9%AA%8C)
  	- 工科物理实验AII
  	- [马克思主义基本原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86)
  	- [计算机组成原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86)
