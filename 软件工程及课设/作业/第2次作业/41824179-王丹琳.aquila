@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Aquila:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Aquila="http://www.ustb.edu.cn/sei/mde/Aquila" UUID="e604cfee-f18c-45c8-85e9-5475084cc7b9">
+  <useCaseElements xsi:type="Aquila:AqActor" name="教师" useCases="//@useCaseElements.4 //@useCaseElements.8 //@useCaseElements.9 //@useCaseElements.10 //@useCaseElements.11 //@useCaseElements.7 //@useCaseElements.13 //@useCaseElements.23" superActors="//@useCaseElements.17"/>
+  <useCaseElements xsi:type="Aquila:AqActor" name="学生" useCases="//@useCaseElements.12 //@useCaseElements.13 //@useCaseElements.7 //@useCaseElements.8 //@useCaseElements.18 //@useCaseElements.22" superActors="//@useCaseElements.17 //@useCaseElements.19"/>
+  <useCaseElements xsi:type="Aquila:AqActor" name="教务" useCases="//@useCaseElements.14 //@useCaseElements.15 //@useCaseElements.12"/>
+  <useCaseElements xsi:type="Aquila:AqActor" name="督导" useCases="//@useCaseElements.16" superActors="//@useCaseElements.19"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="开启课堂" actors="//@useCaseElements.0"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="共享屏幕" actors="//@useCaseElements.17"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="使用电子白板笔" extends="//@useCaseElements.5"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="点名" actors="//@useCaseElements.1 //@useCaseElements.0"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="要求学生发言" actors="//@useCaseElements.0 //@useCaseElements.1"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="发布在线测试和作业" actors="//@useCaseElements.0"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="批阅做作业和测试" actors="//@useCaseElements.0"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="统计学生的学习情况" actors="//@useCaseElements.0"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="加入课堂" actors="//@useCaseElements.1 //@useCaseElements.2"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="举手发言" actors="//@useCaseElements.1 //@useCaseElements.0"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="导入课程和选课信息" actors="//@useCaseElements.2"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="导出成绩信息" actors="//@useCaseElements.2"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="填写听课评语" actors="//@useCaseElements.3"/>
+  <useCaseElements xsi:type="Aquila:AqActor" name="person" useCases="//@useCaseElements.5 //@useCaseElements.21"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="参与在线测试、提交作业" actors="//@useCaseElements.1"/>
+  <useCaseElements xsi:type="Aquila:AqActor" name="听课的人" useCases="//@useCaseElements.20"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="课堂听课" actors="//@useCaseElements.19"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="录屏" actors="//@useCaseElements.17"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="课程回看" actors="//@useCaseElements.1"/>
+  <useCaseElements xsi:type="Aquila:AqUseCase" name="发课程公告" actors="//@useCaseElements.0"/>
+</Aquila:Model>

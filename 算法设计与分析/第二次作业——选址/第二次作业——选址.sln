@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "第二次作业——选址", "第二次作业——选址\第二次作业——选址.vcxproj", "{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Debug|x64.ActiveCfg = Debug|x64
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Debug|x64.Build.0 = Debug|x64
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Debug|x86.Build.0 = Debug|Win32
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Release|x64.ActiveCfg = Release|x64
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Release|x64.Build.0 = Release|x64
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Release|x86.ActiveCfg = Release|Win32
+		{FEDB08EF-CF8F-4289-A893-47FD98DDB8EC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AA8CDA4-B7CB-4BF1-8FBD-3D103B600FF8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+﻿  源.cpp
+c:\users\peanut\desktop\第三次作业——文具店\第三次作业——文具店\源.cpp(12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+c:\users\peanut\desktop\第三次作业——文具店\第三次作业——文具店\源.cpp(14): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\peanut\desktop\第三次作业——文具店\第三次作业——文具店\源.cpp(15): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\peanut\desktop\第三次作业——文具店\第三次作业——文具店\源.cpp(25): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\peanut\desktop\第三次作业——文具店\第三次作业——文具店\源.cpp(32): warning C4018: “<”: 有符号/无符号不匹配
+  第三次作业——文具店.vcxproj -> C:\Users\Peanut\Desktop\第三次作业——文具店\Debug\第三次作业——文具店.exe

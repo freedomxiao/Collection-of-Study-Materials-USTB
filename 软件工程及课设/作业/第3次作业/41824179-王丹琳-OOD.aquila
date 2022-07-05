@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Aquila:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Aquila="http://www.ustb.edu.cn/sei/mde/Aquila" UUID="23c5bfb9-89bc-4a39-a79c-4b7751e75c83">
+  <elements xsi:type="Aquila:AqClass" name="person">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="id" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="用户" superTypes="//@elements.0">
+    <structuralFeatures xsi:type="Aquila:AqReference" name="ref" upperBound="10000" containment="true" referenceType="//@elements.2"/>
+    <operations name="发言" upperBound="1"/>
+    <operations name="共享屏幕" upperBound="1"/>
+    <operations name="白板笔" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="角色"/>
+  <elements xsi:type="Aquila:AqClass" name="学生" superTypes="//@elements.2">
+    <operations name="举手" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="教师" superTypes="//@elements.2">
+    <operations name="开启课堂" upperBound="1"/>
+    <operations name="点名" upperBound="1"/>
+    <operations name="要求学生发言" upperBound="1"/>
+    <dependencies target="//@elements.8" kind="call"/>
+    <dependencies target="//@elements.11" kind="call"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="教务" superTypes="//@elements.0">
+    <operations name="导入课程和选课信息" upperBound="1"/>
+    <operations name="导出成绩信息" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="督导" superTypes="//@elements.0">
+    <operations name="加入课堂旁听" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="评语">
+    <structuralFeatures xsi:type="Aquila:AqReference" name="督导_评语" lowerBound="1" upperBound="1" referenceType="//@elements.6"/>
+    <structuralFeatures xsi:type="Aquila:AqReference" name="课堂_评语" lowerBound="1" upperBound="1" referenceType="//@elements.8"/>
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="内容" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="课堂" superTypes="//@elements.9">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="时间" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="地点" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="课程">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="class_id" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqReference" name="主讲老师" upperBound="1" referenceType="//@elements.4"/>
+    <structuralFeatures xsi:type="Aquila:AqReference" name="ref" upperBound="10000" containment="true" referenceType="//@elements.11"/>
+    <structuralFeatures xsi:type="Aquila:AqReference" name="选修的学生" upperBound="10000" referenceType="//@elements.3"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="课程活动_学生">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="得分" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqReference" name="ref" lowerBound="1" upperBound="1" referenceType="//@elements.3"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="课程活动">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="测试" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="作业" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqReference" name="ref" upperBound="10000" containment="true" referenceType="//@elements.10"/>
+    <operations name="开启" upperBound="1"/>
+    <operations name="关闭" upperBound="1"/>
+  </elements>
+</Aquila:Model>

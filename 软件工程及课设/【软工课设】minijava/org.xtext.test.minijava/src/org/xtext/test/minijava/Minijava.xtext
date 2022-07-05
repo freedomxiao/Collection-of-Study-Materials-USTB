@@ -1,0 +1,144 @@
+grammar org.xtext.test.minijava.Minijava with org.eclipse.xtext.common.Terminals
+
+generate minijava "http://www.xtext.org/test/minijava/Minijava"
+
+Goal:
+	( package = PackageDecl )? ( importdecl += ImportDecl )* classDeclarations += MainClass ( classDeclarations += ClassDeclaration )*
+	;
+
+PackageDecl:
+  'package' QualifiedName ';'
+;
+
+ImportDecl:
+	'import' QualifiedName ';'
+;
+
+QualifiedName_:
+	"." ID QualifiedName_
+; 
+QualifiedName:
+	ID QualifiedName_
+;  
+
+QualifiedNameList:
+	qualifiedName = QualifiedName (qualifiedNameLi = QualifiedNameLi)?
+;
+
+QualifiedNameLi:
+	"," qualifiedName = QualifiedName qualifiedNameLi = QualifiedNameLi	
+;
+
+MainClass:
+	'class' name = ID '{'
+		'public' 'static' 'void' 'main' '(' 'String' '[' ']' ID ')' '{'
+		( varDeclarations += VarDeclaration 
+		| methodDeclarations += MethodDeclaration 
+		| statement = Statement
+		)*
+		'}'
+    '}'
+	;
+	
+
+ClassDeclaration:
+	'class' name = ID ( 'extends' qualifiedName =  [ClassDeclaration | ID]  )? ('implements' qualifiedNameList = QualifiedNameList)? '{'
+		( varDeclarations += VarDeclaration 
+		| methodDeclarations += MethodDeclaration )*
+	'}'
+	;
+	
+Type:
+	'int' typeName = '[' ']'
+	|	typeName = 'int'
+	|	typeName = 'boolean' 
+	|	typeName = 'double'
+	|	typeName = 'char'
+	|	qualifiedName = QualifiedName
+	|	'(' varList = VarList ')'
+	;
+	
+VarDeclaration:
+	variable = Variable ';'
+	;
+	
+Variable:
+	variableType = Type name = ID
+	;
+
+VarList :
+	VarDeclaration varLi = VarLi
+;
+VarLi :
+	',' VarDeclaration varLi = VarLi 
+;	
+	
+MethodDeclaration returns Method:
+	('public'|'protected'|'private') methodType = Type name = ID '(' varList =  VarList? ')' '{'
+		( localVarDeclarations += VarDeclaration )* 
+		( statements += Statement )*
+		('return' returnExpression = Expression ';')?
+	'}'
+	;
+	
+Statement:
+	statementType = '{' ( statements += Statement )* '}'
+	|	statementType = 'if' '(' firstExpression = Expression ')' statements += Statement 'else' statements += Statement
+	|	statementType = 'while' '(' firstExpression = Expression ')' statements += Statement
+	|	variable = [Variable | ID] statementType = '=' firstExpression = Expression ';'
+	|	variable = [Variable | ID] isArrayElementAssignment?='[' firstExpression = Expression ']'
+			statementType = '=' secondExpression = Expression ';'
+	;
+
+Expression returns Expr:
+	addition = Addition ({Expression.left=current} expressionType = '<' right=Expression)?
+	;
+	
+Addition returns Expr:
+	multiplication = Multiplication ({Addition.left=current} expressionType = ('+' | '-') right=Multiplication)*
+	;
+  
+Multiplication returns Expr:
+	negationOrPointExpression = NegationOrPointExpression ({Multiplication.left=current} expressionType = ('*' | '&&') right=NegationOrPointExpression)*
+	;
+	
+NegationOrPointExpression returns Expr:
+	Negation
+	| point = Point
+	;
+  
+Negation returns Expr:
+	expressionType = '!' right = Point
+	;
+  
+Point returns Expr:
+	squareBrackets = SquareBrackets ( {Point.left=current} expressionType = '.' right = MethodCallExpr )*
+	;
+  
+SquareBrackets returns Expr:
+	primary = Primary ({SquareBrackets.left=current} expressionType = '[' right=Primary ']')?
+	;
+  
+Primary returns Expr:
+	expressionType = 'true'
+	|	expressionType = 'false'
+	|	expressionType = 'this'
+	|	expressionType = 'new' 'int' '[' expression = Expression ']'
+	|	expressionType = 'new' type = Type '(' ')'
+	|	expressionType = '(' expression = Expression ')'
+	|	variable = [Variable | ID]
+	|	number = NumberValue
+	;
+	
+MethodCallExpr returns Expr:
+	expressionType = 'length'
+	| methodCall = MethodCall
+	;
+	
+MethodCall:
+	method = [Method | ID] '(' ( parameters += Expression ( ',' parameters += Expression )* )? ')'
+	;
+	
+NumberValue:
+	value = INT
+	;
