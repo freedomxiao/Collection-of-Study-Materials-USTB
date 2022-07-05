@@ -9,10 +9,10 @@
  	- 模拟与数字电子技术
  	- [数字逻辑](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91)
  	- [程序设计实践II](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%20II)
-  - 党史与国情概论
-  -大学生医学卫生保健基础
-  -大学英语6级听力词汇
-  -电子信息材料
+ 	- 党史与国情概论
+ 	- 大学生医学卫生保健基础
+ 	- 大学英语6级听力词汇
+ 	- 电子信息材料
  - 大二下
  	- 数值计算方法
  	- 数学实验
