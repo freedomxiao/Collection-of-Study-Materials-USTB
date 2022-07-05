@@ -1,0 +1,459 @@
+  
+IO8255_MODE EQU 28BH
+IO8255_A EQU 288H
+IO8255_B EQU 289H
+IO8255_C EQU 28AH
+
+I8259_1 EQU 2B0H
+I8259_2 EQU 2B1H
+I8259_3 EQU 2B1H
+I8259_4 EQU 2B1H
+O8259_1 EQU 2B1H		
+O8259_2 EQU 2B0H
+O8259_3 EQU 2B0H
+
+IO8254_MODE EQU 283H
+IO8254_COUNT0 EQU 280H
+IO8254_COUNT1 EQU 281H
+
+
+DATA SEGMENT
+		SIGNAL DB 00H  	;当SIGNAL=0时，秒表处于暂停状态，当SIGNAL=1时，秒表处于计时状态
+        MINUTE DB 00H	;表示秒表的分钟			
+       	SECOND DB 00H	;表示秒表的秒钟
+        MILLISECOND DB 00H	;表示毫秒
+		OUTMAP DB 00H,01H,02H,03H,04H,05H,06H,07H,08H,09H ;用于给OUTBUF赋值，通过BX+AL找到对应的位置，那么其中存储的数字就应该是OUTBUF对应位的数值
+		OUTBUF DB 0,0,0,0,0,0	;用于存储MINUTE(共两位），SECOND（共两位）和MILLISECOND（共两位）共六位，每一位上输出的数值
+		LCDMAP DW 0A3B0H,0A3B1H,0A3B2H,0A3B3H,0A3B4H,0A3B5H,0A3B6H,0A3B7H,0A3B8H,0A3B9H	;0,1,2,3,4,5,6,7,8,9在LCD上显示的字符码
+		HZ_TAB DW 0A3B0H,0A3B0H,0A1C3H,0A3B0H,0A3B0H,0A1C3H,0A3B0H,0A3B0H	;在LCD上最开始默认显示为"00:00:00"
+               DW 0B8B4H,0CEBBH,0A3A0H,0A3A0H,0A3A0H,0A3A0H,0C6F4H,0B6AFH	;在LCD上显示"复位        启动"
+		       DW 0BCC6H,0CAB1H,0A3A0H,0A3A0H,0A3A0H,0A3A0H,0CDA3H,0D6B9H	;在LCD上显示"计时        停止"
+		HZ_ADR DB ?;存放显示行起始端口地址
+DATA ENDS
+
+STACKS SEGMENT
+		DB 100 DUP(?)
+STACKS ENDS
+STACK1 SEGMENT STACK
+		DW 256 DUP(?)
+STACK1 ENDS
+
+CODE SEGMENT
+		ASSUME CS:CODE,DS:DATA,SS:STACKS,ES:DATA
+START:
+.386	;采用PC机内部中断，利用DOS中断21H和更新中断服务程序入口地址的25H功能设置中断向量	
+		CLI				;开中断
+		MOV AX,CS
+		MOV DS,AX
+		MOV DX,OFFSET RIGHT_KEY	;RIGHT_KEY中断服务程序的段基址
+		MOV AX,2572H	;右键脉冲连接到USB核心板上的IR10，而此IR10接到了10号中断IRQ10上，对应的中断类型号为72H
+		INT 21H
+		MOV DX,OFFSET LEFT_KEY	;LEFT_KEY中断服务程序的段基址
+		MOV AX,250BH	;左键脉冲连接到实验系统总线区的IRQ上，而此IRQ接到了3号中断IRQ3上，对应的终端类型号为0BH
+		INT 21H
+		IN AL,21H		;写主片的OCW1，开放主片的2，3号端口
+		AND AL,0F3H
+		OUT 21H,AL	
+		IN AL,0A1H		;写从片的OCW1，开放10号端口
+		AND AL,0FBH	
+		OUT 0A1H,AL
+
+		;使用试验箱提供的8259中断源，向PC机提交中断请求
+		MOV AX,DATA
+		MOV DS,AX
+		MOV ES,AX
+		MOV AX,STACKS
+		MOV SS,AX
+		MOV DX,I8259_1  ;初始化8259的ICW1
+		MOV AL,13H	    ;边沿触发、单片8259、需要ICW4
+		OUT DX,AL
+		MOV DX,I8259_2  ;初始化8259的ICW2
+		MOV AL,0B0H
+		OUT DX,AL
+		MOV AL,03H     	;初始化8259的ICW4
+		OUT DX,AL
+		MOV DX,O8259_1 	;初始化8259的中断屏蔽操作命令字OCW1
+		MOV AL,00H
+		OUT DX,AL
+
+		;设置8254的工作方式
+		MOV AX,DATA
+		MOV DS,AX
+		MOV DX,IO8254_MODE		;设置计数器0的工作方式
+		MOV AL,16H
+		OUT DX,AL
+		MOV DX,IO8254_COUNT0	;设置计数器0的初值
+		MOV AL,0C8H
+		OUT DX,AL
+		MOV DX,IO8254_MODE 		;设置计数器1的工作方式
+		MOV AL,56H
+		OUT DX,AL
+		MOV DX,IO8254_COUNT1	;设置计数器1的初值
+		MOV AL,064H
+		OUT DX,AL
+
+		;设置8255的工作方式
+		MOV DX,IO8255_MODE  
+		MOV AL,80H     	;A、B、C端口均设置为输出
+		OUT DX,AL
+		STI				;关中断
+
+		;LCD清屏
+		CALL CLEAR     	
+
+		;给各变量赋初值
+		MOV MINUTE,0	
+		MOV SECOND,0
+		MOV MILLISECOND,0
+		MOV SIGNAL,0
+		CALL SHOW		;在LCD上显示输出
+
+LP:		CALL QUERY		;函数调用进行查询中断
+		CALL SET_BUF	;调用SET_BUF函数对OUTBUF进行实时更新
+		CALL CHANGE		;将缓冲区里的数值转换为LCD显示用到的字符码
+  		CALL SHOW		;在LCD上显示当前的计数
+		JMP LP 			;无条件跳转，一致保持循环
+		
+		MOV AH,4CH
+		INT 21H
+
+
+;设置RIGHT_KEY产生一次中断时需要执行的内容
+RIGHT_KEY:	
+		CLI				;关中断
+		PUSH AX	
+		MOV AL,SIGNAL
+		XOR AL,01H 		;将SIGNAL的末位取反
+		MOV SIGNAL,AL
+		MOV AL,20H 		;发送中断结束
+		OUT 0A0H,AL
+		OUT 20H,AL
+		POP AX
+		STI
+		IRET
+
+;设置LEFT_KEY产生一次中断时需要执行的内容
+LEFT_KEY:	
+		CLI
+		PUSH AX
+		MOV AL,SIGNAL
+		CMP AL,0
+		JZ RESET_  		;SIGNAL=0时调用复位函数
+		CALL REC  		;SIGNAL=1时调用记录函数
+		JMP EXIT2
+RESET_:	CALL RESET
+EXIT2:	MOV AL,20H
+		OUT 0A0H,AL
+		OUT 20H,AL		
+		POP AX
+		STI
+		IRET
+
+;进行中断查询子函数
+QUERY PROC NEAR
+		MOV DX,O8259_1  ;向8259发送查询命令字
+		MOV AL,0CH
+		OUT DX,AL
+		IN AL,DX
+		TEST AL,01H
+		JZ EXIT3  		;如果等于零说明IR0没有中断请求
+		CALL IENTER		;否则MILLISECOND加一
+EXIT3:	MOV DX,O8259_2
+		MOV AL,20H
+		OUT DX,AL
+		RET
+QUERY ENDP
+
+;将8254输出的clk作为一个中断请求，每次请求后使得计数动态增加
+IENTER PROC NEAR
+		MOV AX,DATA
+		MOV DS,AX
+		MOV AL,SIGNAL 	
+		CMP AL,0
+		JZ EXIT1				;如果当前SIGNAL为0，尽管对8254输出的clock请求进行应答，但不会使MILLISECOND加一
+		INC MILLISECOND   		;自动加一
+		MOV AL,MILLISECOND  
+		CMP AL,100    
+		JNE EXIT1    			;若秒没有累计到100，那么退出
+		MOV MILLISECOND,0 		;如果毫秒达到了100，则清零重新开始计时
+		INC SECOND
+		MOV AL,SECOND
+		CMP AL,60
+		JNE EXIT1
+		MOV SECOND,0
+		INC MINUTE
+		MOV AL,MINUTE
+		CMP AL,60   			;最多计时为60分钟
+		JNE EXIT1 
+		MOV MINUTE,0
+EXIT1:	RET
+IENTER ENDP
+
+;设置缓冲区，对缓冲区中的内容进行更新
+SET_BUF PROC NEAR
+		MOV AL,MINUTE
+		MOV AH,0
+		MOV CL,10
+		DIV CL 				;AH中存放余数，AL中存放商，即AH中存放两位数的高位，AL中存放两位数的低位
+		MOV CH,AH  			;把余数暂存到CH中
+		MOV AH,0
+		MOV BX,OFFSET OUTMAP
+		ADD BX,AX 			;AX中的值为多少，BX就偏移多少，偏移后BX中的值即为要存入OUTBUF对应位置的数
+		MOV AL,[BX];
+		MOV OUTBUF,AL  		;送入缓冲区
+		MOV BX,OFFSET OUTMAP
+		MOV AL,CH  			;把余数从CH中取出。赋值给AL
+		MOV AH,0			;高位再次补零
+		ADD BX,AX
+		MOV AL,[BX]
+		MOV OUTBUF+1,AL 	;缓冲区向后移动一位，然后把余数送到缓冲区的第二位
+		;同上述方法，将SECOND按照十位和个位分开存到OUTBUF中
+		MOV AL,SECOND
+		MOV AH,0
+		MOV CL,10
+		DIV CL          
+		MOV CH,AH       
+		MOV AH,0
+		MOV BX,OFFSET OUTMAP
+		ADD BX,AX
+		MOV AL,[BX]
+		MOV OUTBUF+2,AL 
+		MOV BX,OFFSET OUTMAP
+		MOV AL,CH
+		MOV AH,0
+		ADD BX,AX
+		MOV AL,[BX]
+		MOV OUTBUF+3,AL
+		;存MILLISECOND的十位和个位送入缓冲区中
+		MOV AL,MILLISECOND
+		MOV AH,0
+		MOV CL,10
+		DIV CL
+		MOV CH,AH
+		MOV AH,0
+		MOV BX,OFFSET OFFSET OUTMAP
+		ADD BX,AX
+		MOV AL,[BX]
+		MOV OUTBUF+4,AL
+		MOV BX,OFFSET OUTMAP
+		MOV AL,CH
+		MOV AH,0
+		ADD BX,AX
+		MOV AL,[BX]
+		MOV OUTBUF+5,AL
+		RET
+SET_BUF ENDP
+
+;将缓冲区里的数转换为输出字符
+CHANGE PROC NEAR
+		MOV SI,OFFSET HZ_TAB	;获得输出字符码存储位置的偏移地址
+		MOV BX,OFFSET OUTBUF 	;获得缓冲区的偏移地址
+		MOV CX,3
+DLOOP:  	
+		MOV AL,[BX]     		;缓冲区的值
+		PUSH BX
+		MOV BX,OFFSET LCDMAP	;根据缓冲区中的值，找到最终可以显示对应数字的字符码，存到HZ_TAB的对应位置
+		MOV AH,0
+		SHL AX,1				;因为字符码是按字存储的，因此每次找字符码都需要将偏移数量乘2，即左移一位
+		ADD BX,AX  				;找到应输出的字符码
+		MOV AX,[BX]
+		MOV [SI],AX 			;把字符代码送到输出行中
+		POP BX
+		INC BX 					;读取缓冲区的下一位
+		INC SI 					;由于按字存储，输出行向后需要移动两位
+		INC SI
+		MOV AL,[BX]    		 	;重复上述步骤
+		PUSH BX
+		MOV BX,OFFSET LCDMAP
+		MOV AH,0
+		SHL AX,1
+		ADD BX,AX  				;找到应输出的字符代码
+		MOV AX,[BX]
+		MOV [SI],AX 			;把字符代码送到输出行中
+		POP BX
+		INC BX   				;读取缓冲区的下一位
+		INC SI 					;输出行向后移动两位
+		INC SI 			
+		INC SI 					;每隔两个字符，都会输出一个冒号，需要将这个冒号跳过
+		INC SI
+		DEC CL
+		JNZ DLOOP  				;循环直至三次循环结束
+		RET
+CHANGE ENDP
+
+
+
+
+;计数器重置函数
+RESET PROC NEAR
+		MOV AX,DATA
+		MOV DS,AX
+		MOV MINUTE,0
+		MOV SECOND,0
+		MOV MILLISECOND,0
+		MOV SIGNAL,0
+		CALL SET_BUF 			;重置一次缓冲区
+		CALL CHANGE 
+		CALL SHOW 				;将充值后的内容显示出来
+		RET
+RESET ENDP
+
+;将当前计时秒表的内容显示到PC屏幕上
+REC PROC NEAR
+		PUSHAD
+		PUSHFD
+		MOV AX,DATA
+		MOV DS,AX
+		MOV SI,OFFSET OUTBUF
+		MOV CX,2
+LP2:		
+		MOV AH,0
+		MOV AL,[SI]
+		ADD AL,30H
+		MOV DX,AX
+		MOV AH,02H
+		INT 21H 		;在屏幕上输出
+		INC SI  		;偏移地址加一
+		MOV AH,0
+		MOV AL,[SI]
+		ADD AL,30H
+		MOV DX,AX
+		MOV AH,02H
+		INT 21H 		;在屏幕上输出
+		MOV DX,3AH
+		MOV AH,02H
+		INT 21H  		;在屏幕上输出冒号
+		INC SI
+		LOOP LP2
+		;输出毫秒，由于最后不需要输出冒号，因此将其单独拿出来进行一次输出
+		MOV AH,0
+		MOV AL,[SI]
+		ADD AL,30H
+		MOV DX,AX
+		MOV AH,02H
+		INT 21H 		;在屏幕上输出
+		INC SI  		;偏移地址加一
+		MOV AH,0
+		MOV AL,[SI]
+		ADD AL,30H
+		MOV DX,AX
+		MOV AH,02H
+		INT 21H 		;在屏幕上输出
+		MOV DX,0DH 		;归位
+		MOV AH,02H
+		INT 21H
+		MOV DX,0AH 		;换行
+		MOV AH,02H
+		INT 21H
+		POPFD
+		POPAD
+		RET
+REC ENDP
+
+
+;CLEAR子函数定义
+CLEAR PROC
+		MOV AL,0CH
+		MOV DX,IO8255_A
+		OUT DX,AL
+		CALL CMD_SETUP
+		RET
+CLEAR ENDP
+
+;CMD_SETUP子函数定义
+CMD_SETUP PROC
+ 		MOV DX, IO8255_C 	;指向8255端口控制端口
+ 		NOP
+ 		MOV AL,00000000B 	;PC1置0,pc0置0 （LCD I端=0，W端＝0）
+ 		OUT DX, AL
+ 		NOP
+ 		MOV AL,00000100B 	;PC2置1 （LCD E端＝1）
+ 		OUT DX, AL
+ 		NOP
+ 		MOV AL, 00000000B 	;PC2置0,（LCD E端置0）
+ 		OUT DX, AL
+ 		RET
+CMD_SETUP ENDP
+
+;在LCD上显示
+SHOW PROC NEAR
+		PUSHAD
+		PUSHFD
+		MOV AX,DATA
+		MOV DS,AX
+		LEA BX,HZ_TAB
+		MOV CH,2       ;显示第2行信息
+		CALL LCD_DISP
+		LEA BX,HZ_TAB
+		MOV CH,4       ;显示第4行信息
+		CALL LCD_DISP
+		POPFD		
+		POPAD
+		RET
+SHOW ENDP
+
+;LCD上显示内容的具体代码部分
+LCD_DISP PROC
+ 		LEA BX, HZ_TAB
+		CMP CH, 2				;如果CH的值为2，则此次要刷新的时LCD上的第二行
+		JZ DISP_SEC
+		MOV BYTE PTR HZ_ADR,98H	;如果CH的值不是2，则此次要刷新的时LCD的第
+		MOV AL,SIGNAL 			;根据SIGNAL的值，选择在LCD上显示的内容
+		CMP AL,0
+		JZ ADD_TAB
+		ADD BX,32				;显示“计时        停止”
+		JMP NEXT
+ADD_TAB:	
+		ADD BX,16				;显示“复位        启动”
+		JMP NEXT
+DISP_SEC:   
+		MOV BYTE PTR HZ_ADR,90H	;设置写入LCD的地址（对应于第四行）
+NEXT:		
+		MOV CL,8
+CONTINUE: 	
+		PUSH CX
+ 		MOV AL,HZ_ADR
+ 		MOV DX, IO8255_A
+ 		OUT DX, AL
+ 		CALL CMD_SETUP 			;设定DDRAM地址命令
+ 		MOV AX,[BX]
+ 		PUSH AX
+ 		MOV AL,AH 				;先送汉字编码高位
+ 		MOV DX, IO8255_A
+ 		OUT DX,AL
+ 		CALL DATA_SETUP 		;输出汉字编码高字节
+ 		POP AX
+ 		MOV DX, IO8255_A
+ 		OUT DX, AL
+ 		CALL DATA_SETUP 		;输出汉字编码低字节
+ 		INC BX
+ 		INC BX 					;修改显示内码缓冲区指针
+ 		INC BYTE PTR HZ_ADR 	;修改LCD显示端口地址
+ 		POP CX
+ 		DEC CL
+ 		JNZ CONTINUE
+ 		RET
+LCD_DISP ENDP
+
+
+DATA_SETUP PROC
+ 		MOV DX, IO8255_C 	;指向8255控制端口
+ 		MOV AL,00000001B 	;PC1置0，PC0=1 （LCD I端=1）
+ 		OUT DX, AL
+ 		NOP
+ 		MOV AL,00000101B 	;PC2置1 （LCD E端＝1）
+ 		OUT DX, AL
+ 		NOP
+ 		MOV AL, 00000001B 	;PC2置0,（LCD E端＝0）
+ 		OUT DX, AL
+ 		NOP
+ 		RET
+DATA_SETUP ENDP
+
+CODE ENDS
+END START
+
+
+
+
+
