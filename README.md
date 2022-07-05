@@ -1,4 +1,5 @@
 # Collection-of-Study-Materials-USTB
+基本上就是18级的培养计划
  - 大二上
  	- [离散数学A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6)
  	- 概率论与数理统计A
