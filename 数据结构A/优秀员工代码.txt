@@ -1,0 +1,116 @@
+#include <iostream>
+using namespace std;
+
+class Node{
+public :
+    int data;
+    Node *next;
+    Node(int _data){
+        data=_data;
+        next=NULL;
+    }
+};  //创建一个节点
+ 
+class LinkList{   //数据插入形成链表 
+public:
+    Node *head;
+    LinkList()
+	{
+        head=NULL;
+    }
+    void insert(Node *node,int index)
+	{  //数据前插入
+        if(head==NULL){
+            head=node;
+            head->next=NULL;
+            return;
+        }  //如果原本为空链表，插入之后只有一个数据。 
+        if(index==0){
+            node->next=head;
+            head=node;
+            return;
+        }//插在头部的时候，除了数据插入，还要头指针前移 
+        Node *current_node=head; //指针现在的位置 
+        int count=0;
+        while(current_node->next!=NULL&&count<index-1){
+            count++;
+            current_node=current_node->next;  //指针移动到指定要插入的位置
+        }
+        if(count==index-1){
+            node->next=current_node->next;
+            current_node->next=node;
+            return;    //插入到index之前 
+        }
+        return;
+    }
+
+    void delete_node(int index) {  //删除index的数据 
+        Node *current_node = head;
+        int count = 0;
+        if (index == 0) {
+            head = head->next;
+            delete current_node;
+            return;
+        }
+        while (current_node->next != NULL && count < index -1) {
+            current_node = current_node->next;
+            count++;
+        }
+        if (count == index - 1 && current_node->next != NULL) {
+            Node *delete_node = current_node->next;
+            current_node->next = delete_node->next;
+            delete delete_node;
+        }
+    }
+
+    int search(int index){
+        Node *current_node=head;
+        int count=0;
+        while(current_node->next!=NULL&&count<index){
+            current_node=current_node->next;
+            count++;
+        }
+        if(count==index&&current_node!=NULL){
+            return current_node->data;
+        }
+        return -2;
+    }
+
+    void show(){
+        Node *current_node=head;
+        while(current_node!=NULL){
+            //cout<<current_node->data<<" ";
+            current_node=current_node->next;
+        }
+        cout<<endl;
+    }  //输出链表内容 
+
+    int getLenth(){
+        int len=0;
+        Node *current_node=head;
+        while(current_node!=NULL){
+            len++;
+            current_node=current_node->next;
+        }
+        return len;
+    }  //计算链表的长度 
+
+};
+
+int main(){
+    int N,M;
+    cin>>N>>M;
+    LinkList *linklist=new LinkList();  //创建链表 
+    int *key=new int[M];  //开辟一块空间，包含M个整数 
+    for(int i=1;i<=N;i++){
+        Node *node=new Node(i);   //把链表里的每一块的内容加进去 
+        linklist->insert(node,i-1);  //数据插入形成链表 
+    }
+    for(int j=0;j<M;j++){
+        cin>>key[j];  //输入老板报的数据 
+        linklist->delete_node(key[j]-1);
+        //删除数据 
+    }
+    int count=N-M;  //最后剩下的数 
+    cout<<linklist->search((count+1)/2-1)<<endl;  //查找，输出 
+}
