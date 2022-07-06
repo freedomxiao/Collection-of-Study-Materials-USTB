@@ -20,8 +20,8 @@
  	- [工科物理实验AII](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E5%B7%A5%E7%A7%91%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8CAII)
  	- [马克思主义基本原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86)
  	- [计算机组成原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86)
- 	- 数据结构A
- 	- 电子技术实习
+ 	- [数据结构A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84A)
+ 	- [电子技术实习](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E5%AE%9E%E4%B9%A0)
  	- 体育IV
  	- 大学生职业发展与就业指导II
  	- web程序设计
@@ -30,8 +30,8 @@
  	-	[数据库系统原理B（双语）	](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86B%EF%BC%88%E5%8F%8C%E8%AF%AD%EF%BC%89)
  	-	[计算机接口实验](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8E%A5%E5%8F%A3%E5%AE%9E%E9%AA%8C)
  	-	[数据库设计实验](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86B%EF%BC%88%E5%8F%8C%E8%AF%AD%EF%BC%89)
- 	-	计算机组成原理课程设计
- 	-	工程导论
+ 	-	[计算机组成原理课程设计](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1)
+ 	-	[工程导论](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E5%B7%A5%E7%A8%8B%E5%AF%BC%E8%AE%BA)
  	-	[汇编语言与接口技术](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%8E%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF)
  	-	[算法设计与分析](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90)
  	-	[计算机网络](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%AE%9E%E9%AA%8C)
