@@ -50,3 +50,5 @@
  	- [物联网工程概论](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%89%A9%E8%81%94%E7%BD%91%E6%A6%82%E8%AE%BA)
  	- [编译原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86)
  	- [计算机体系结构](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84)
+ - 大四上
+  	- [经济与管理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86) 
