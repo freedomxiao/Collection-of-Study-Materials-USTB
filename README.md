@@ -7,7 +7,7 @@
  	- 体育III
  	- 工科物理BII
  	- 数字电子技术实验
- 	- 模拟与数字电子技术
+ 	- [模拟与数字电子技术](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%A8%A1%E6%8B%9F%E4%B8%8E%E6%95%B0%E5%AD%97%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF)
  	- [数字逻辑](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91)
  	- [程序设计实践II](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%20II)
  	- 党史与国情概论
