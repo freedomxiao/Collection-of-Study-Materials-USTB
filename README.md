@@ -1,5 +1,7 @@
 # Collection-of-Study-Materials-USTB
 基本上就是18级的培养计划
+ - 大一下
+ 	- [电路分析基础B](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80B)
  - 大二上
  	- [离散数学A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6)
  	- [概率论与数理统计A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1A)
