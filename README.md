@@ -18,7 +18,7 @@
  	- 大学英语6级听力词汇
  	- 电子信息材料
  - 大二下
- 	- 数值计算方法
+ 	- [数值计算方法](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95)
  	- [数学实验](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%95%B0%E5%AD%A6%E5%AE%9E%E9%AA%8C)
  	- [工科物理实验AII](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E5%B7%A5%E7%A7%91%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8CAII)
  	- [马克思主义基本原理](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86)
