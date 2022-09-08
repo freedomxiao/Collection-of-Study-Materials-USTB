@@ -2,7 +2,7 @@
 基本上就是18级的培养计划
  - 大二上
  	- [离散数学A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6)
- 	- 概率论与数理统计A
+ 	- [概率论与数理统计A](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1A)
  	- [工科物理实验AI](https://github.com/Peanut31434331/Collection-of-Study-Materials-USTB/tree/master/%E5%B7%A5%E7%A7%91%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8CAI)
  	- 体育III
  	- 工科物理BII
